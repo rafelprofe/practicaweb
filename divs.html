@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .links {
+            float: left;
+            width: 30%;
+            height: 400px;
+        }
+
+        .links a {
+            color: black; /* Black text color */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: block; /* Make the links appear below each other */
+            padding: 12px; /* Add some padding */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        .links a:hover {
+            background-color: #ccc; /* Dark grey background on mouse-over */
+        }
+
+        .content {
+            float: left;
+            width: 70%;
+            height: 400px;
+        }
+
+        @media all and (max-width: 600px) {
+            .links {
+                width: 100%;
+                height: auto;
+                clear: left;
+            }
+
+            .links a {
+                float: left;
+            }
+            
+            .content {
+                width: 100%;
+                clear: left;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div style="background-color: aqua; height: 150px; width: 100%;">
+        <img src="foto.jpeg" height="100px" style="float: left; padding: 25px;">
+        <p style="font-size: 3em; vertical-align: middle; line-height: 150px;">WEBPAGE</p>
+    </div>
+    <div class="links" style="background-color: lime; padding: 20px; box-sizing: border-box;">
+        <a href="sites/site1.html" target="finestra1">Link 1</a>
+        <a href="https://google.com" target="_blank">Link 2</a>
+        <a href="https://google.com" target="_blank">Link 3</a>
+    </div>
+    <!-- <div style="background-color: tan; float: left; height: 400px; width: 70%; padding: 20px; box-sizing: border-box;"><p>
+        <h1>Títol</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eos ullam ea ipsam ipsa. Dolore, animi doloremque! Error cupiditate omnis, tempora, est et ipsam explicabo, eveniet neque recusandae distinctio sint!</p>
+        </p>
+    </div> -->
+    <iframe class="content" src="http://iesramonllull.net" name="finestra1" style="border: none;"></iframe></body>
+</html>
